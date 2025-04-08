@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure Wi-Fi Portal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: red;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 10px red;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 20px;
+    }
+    .download-btn {
+      background-color: red;
+      color: white;
+      padding: 15px 25px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 30px;
+      box-shadow: 0 0 20px red;
+    }
+    .download-btn:hover {
+      background-color: darkred;
+    }
+    #siren {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚠️ SECURITY ALERT ⚠️</h1>
+  <p>Unknown access detected. Hacking Executing: Trojan.exe...</p>
+  <p>Your files are being encrypted. Webcam access enabled. loding Google Pay , Phone pay , Paytm and Bank account details codes exituing </p>
+  <a class="download-btn" href="Trojan_Installer_Package_v2.zip" download>
+    🔓 Tap to Connect Secure Wi-Fi
+  </a>
+  <audio id="siren" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"></audio>
+
+  <script>
+    setTimeout(() => {
+      const siren = document.getElementById('siren');
+      siren.volume = 0.6;
+      siren.play();
+    }, 5000); // 10 seconds delay
+  </script>
+</body>
+</html>
